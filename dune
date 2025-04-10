@@ -1,0 +1,8 @@
+(env
+ (dev
+  (flags :standard -rectypes -g -warn-error -a))
+ (release
+  (flags :standard -rectypes -g)
+  (ocamlopt_flags -O3 -unbox-closures)))
+
+(data_only_dirs fscq)

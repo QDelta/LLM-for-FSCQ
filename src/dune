@@ -1,0 +1,28 @@
+(executable
+ (public_name lCoq)
+ (name main)
+ (modules main)
+ (libraries lCoq))
+
+(ocamllex coq_sentence)
+
+(library
+ (name lCoq)
+ (modules
+  gptf
+  strip_proof
+  serutils
+  serpp
+  gemini
+  openai
+  coq_sentence
+  utils)
+ (preprocess
+  (pps ppx_yojson_conv))
+ (libraries
+  re
+  yojson
+  coq-core.lib
+  coq-serapi.serapi_v8_14
+  coq-serapi.sertop_v8_12
+  curl))

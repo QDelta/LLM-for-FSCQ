@@ -1,0 +1,15 @@
+/_opam
+/_build
+/.venv
+
+/.vscode/
+/*.pem
+
+/*.jsonl
+/*_generated.v
+/*_no_proof.v
+/*.vo
+/*.vok
+/*.log
+/*.pkl
+/*.pdf

@@ -1,0 +1,4 @@
+[submodule "fscq"]
+	path = fscq
+	url = https://github.com/QDelta/fscq.git
+	branch = fix816
